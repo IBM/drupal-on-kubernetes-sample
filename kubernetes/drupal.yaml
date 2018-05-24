@@ -1,0 +1,60 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: drupal
+  labels:
+    app: drupal
+spec:
+  ports:
+    - name: drupal-ui
+      port: 80
+      protocol: TCP
+      targetPort: 30080
+      nodePort: 30080
+  selector:
+    app: drupal
+    tier: frontend
+  type: NodePort
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: drupal-claim
+  labels:
+    app: drupal
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: drupal
+  labels:
+    app: drupal
+spec:
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: drupal
+        tier: frontend
+    spec:
+      containers:
+        - image: drupal/drupal:latest
+          name: drupal
+          ports:
+            - containerPort: 30080
+              name: drupal
+          volumeMounts:
+            - name: drupal
+              mountPath: /var/www/html/
+      volumes:
+        - name: drupal
+          persistentVolumeClaim:
+            claimName: drupal-claim
