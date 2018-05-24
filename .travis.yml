@@ -19,4 +19,4 @@ before_script:
   - "./tests/test-shellcheck.sh"
   - "./tests/test-yamllint.sh"
 
-script: docker run hello-world
+script: "./tests/test-minikube.sh"
