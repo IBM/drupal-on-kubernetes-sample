@@ -6,16 +6,13 @@ metadata:
   labels:
     app: drupal
 spec:
+  type: NodePort
   ports:
-    - name: drupal-ui
-      port: 80
-      protocol: TCP
-      targetPort: 30080
+    - port: 80
       nodePort: 30080
   selector:
     app: drupal
     tier: frontend
-  type: NodePort
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -46,14 +43,21 @@ spec:
         tier: frontend
     spec:
       containers:
-        - image: drupal/drupal:latest
+        - image: drupal:latest
           name: drupal
           ports:
             - containerPort: 30080
               name: drupal
           volumeMounts:
             - name: drupal
-              mountPath: /var/www/html/
+              mountPath: /var/www/html/modules
+              subPath: modules
+            - name: drupal
+              mountPath: /var/www/html/profiles
+              subPath: profiles
+            - name: drupal
+              mountPath: /var/www/html/themes
+              subPath: themes
       volumes:
         - name: drupal
           persistentVolumeClaim:
