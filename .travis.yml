@@ -4,8 +4,9 @@ python: 2.7
 cache: pip
 sudo: required
 
-services:
-  - docker
+env:
+  - TEST_RUN="./tests/test-minikube.sh"
+  - TEST_RUN="./tests/test-kubernetes.sh"
 
 before_install:
   - curl -sSL "https://ftp-master.debian.org/keys/archive-key-7.0.asc" | sudo -E apt-key add -
@@ -13,10 +14,12 @@ before_install:
   - sudo apt-get install shellcheck=0.3.3-1~ubuntu14.04.1
   - pip install -U -r test-requirements.txt
 
-install: true
+install:
+  - "./scripts/install.sh"
+  - "./scripts/bx_auth.sh"
 
 before_script:
   - "./tests/test-shellcheck.sh"
   - "./tests/test-yamllint.sh"
 
-script: "./tests/test-minikube.sh"
+script: "$TEST_RUN"
