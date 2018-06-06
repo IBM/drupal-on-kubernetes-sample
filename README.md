@@ -49,6 +49,8 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ## Steps
 
+[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/mlangbehn/drupal-on-kubernetes-sample)
+
 Follow these steps to run Drupal on Kubernetes.
 
 1. [Clone the repo](#1-clone-the-repo)
