@@ -45,7 +45,8 @@ stages:
         target:
           region_id: ${PROD_REGION_ID}
           api_key: ${API_KEY}
-          kubernetes_cluster: ${PROD_CLUSTER_NAME}
+          #kubernetes_cluster: ${PROD_CLUSTER_NAME}
+          kubernetes_cluster: ${CLUSTER_NAME}
           application: Pipeline
         script: |
           #!/bin/bash
