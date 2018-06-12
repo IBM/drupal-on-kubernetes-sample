@@ -45,13 +45,12 @@ stages:
         target:
           region_id: ${PROD_REGION_ID}
           api_key: ${API_KEY}
-          #kubernetes_cluster: ${PROD_CLUSTER_NAME}
           kubernetes_cluster: ${CLUSTER_NAME}
           application: Pipeline
         script: |
           #!/bin/bash
-          ./scripts/install.sh
-          ./scripts/bx_auth.sh
+          TRAVIS_PULL_REQUEST=false ./scripts/install.sh
+          TRAVIS_PULL_REQUEST=false ./scripts/bx_auth.sh
           ./scripts/deploy.sh
 hooks:
   - enabled: true
