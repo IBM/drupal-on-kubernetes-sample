@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/mlangbehn/drupal-on-kubernetes-sample.svg?branch=master)](https://travis-ci.org/mlangbehn/drupal-on-kubernetes-sample)
+[![Build Status](https://travis-ci.org/IBM/drupal-on-kubernetes-sample.svg?branch=master)](https://travis-ci.org/IBM/drupal-on-kubernetes-sample)
 
 # Deploy Drupal on Kubernetes
 
@@ -49,7 +49,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ## Steps
 
-[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/mlangbehn/drupal-on-kubernetes-sample)
+[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM/drupal-on-kubernetes-sample)
 
 Follow these steps to run Drupal on Kubernetes.
 
@@ -65,7 +65,7 @@ Follow these steps to run Drupal on Kubernetes.
 Clone the `drupal-on-kubernetes-sample` locally. In a terminal, run:
 
 ```
-$ git clone https://github.com/mlangbehn/drupal-on-kubernetes
+$ git clone https://github.com/IBM/drupal-on-kubernetes
 ```
 
 ### 2. Create Kubernetes cluster

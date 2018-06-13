@@ -13,7 +13,7 @@ sample-repo:
  service_id: githubpublic
  parameters:
   repo_name: "{{name}}"
-  repo_url: https://github.com/mlangbehn/drupal-on-kubernetes-sample
+  repo_url: https://github.com/IBM/drupal-on-kubernetes-sample
   type: clone
   has_issues: false
 
