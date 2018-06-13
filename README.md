@@ -45,7 +45,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ## Watch the video
 
-*Coming soon*
+[![](http://img.youtube.com/vi/fQY8q6CjU68/0.jpg)](https://youtu.be/fQY8q6CjU68)
 
 ## Steps
 
