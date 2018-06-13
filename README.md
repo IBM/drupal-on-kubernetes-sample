@@ -95,7 +95,15 @@ After deploying, we need to be sure that all pods are running. Check on the stat
 kubectl get pods -l app=drupal
 ```
 
-Once all pod are running we need to know the IP adress of our Drupal. If you are running in Minikube, the connect to http://localhost:30080. If you are running in IBM Cloud, we will need to run the following:
+Once all pod are running we need to know the IP adress of our Drupal.
+
+If you are running in Minikube, run the following:
+
+```shell
+$ minikube service drupal --url
+```
+
+If you are running in IBM Cloud, we will need to run the following:
 
 ```shell
 $ bx cs workers "$CLUSTER_NAME"
@@ -103,6 +111,8 @@ OK
 ID                                                 Public IP        Private IP      Machine Type   State    Status
 kube-dal13-cr896f6348d71b4fd1ba151bc7c32abd46-w1   <REDACTED>       10.187.85.198   free           normal   Ready
 ```
+
+Access the newly deployed Drupal site via http://<IP_ADDRESS>:30080
 
 ## Learn more
 
