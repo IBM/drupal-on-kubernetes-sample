@@ -65,7 +65,7 @@ Follow these steps to run Drupal on Kubernetes.
 Clone the `drupal-on-kubernetes-sample` locally. In a terminal, run:
 
 ```
-$ git clone https://github.com/IBM/drupal-on-kubernetes
+$ git clone https://github.com/IBM/drupal-on-kubernetes-sample
 ```
 
 ### 2. Create Kubernetes cluster
