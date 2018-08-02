@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [[ -z "$CLUSTER_NAME" ]]; then
+	echo "CLUSTER_NAME environment variable is not set."
+	exit 1
+fi
+
 echo "Create Drupal"
 IP_ADDR=$(bx cs workers "$CLUSTER_NAME" | grep Ready | awk '{ print $2 }')
 if [[ -z "$IP_ADDR" ]]; then
