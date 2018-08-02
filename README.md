@@ -70,6 +70,8 @@ $ git clone https://github.com/IBM/drupal-on-kubernetes-sample
 
 ### 2. Create Kubernetes cluster
 
+Note: Minimum version 1.10 is required for both Kubernetes server and kubectl client.
+
 #### 2.1 Locally
 
 Follow the instructions for [running Kubernetes locally via Minikube](https://kubernetes.io/docs/getting-started-guides/minikube/).
