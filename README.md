@@ -10,22 +10,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 * Run a website hosted via Kubernetes
 * Use Kubernetes persistent volumes to maintain Drupal configurations between container restarts
 
-```
- +---------------+-----------------------------------------+
- | Client device | Provider cloud                          |
- |               |                                         |
- | Web user      | +-Kubernetes--------------------------+ |
- |               | |                                     | |
- |               | | +-Docker-----------+ +-Docker-----+ | |
- |               | | |                  | |            | | |
- |               | | | Drupal interface | | PostgreSQL | | |
- |               | | |                  | |            | | |
- |               | | +------------------+ +------------+ | |
- |               | |                                     | |
- |               | +-------------------------------------+ |
- |               |                                         |
- +---------------+-----------------------------------------+
-```
+![](images/architecture.png)
 
 ## Flow
 
