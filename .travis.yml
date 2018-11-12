@@ -18,6 +18,6 @@ jobs:
     - install: ./pattern-ci/scripts/install-minikube.sh
       script: ./tests/test-minikube.sh
     - install:
-        - ./pattern-ci/scripts/bx-auth.sh
         - ./pattern-ci/scripts/install-ibmcloud.sh
+        - ./pattern-ci/scripts/bx-auth.sh
       script: ./tests/test-kubernetes.sh
