@@ -21,20 +21,20 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 ## Included components
 
-* [Kubernetes Cluster](https://console.bluemix.net/docs/containers/container_index.html): Create and manage your own cloud infrastructure and use Kubernetes as your container orchestration engine.
+* [Kubernetes Cluster](https://cloud.ibm.com/docs/containers/container_index.html): Create and manage your own cloud infrastructure and use Kubernetes as your container orchestration engine.
 * [PostgreSQL](https://www.postgresql.org/): Sophisticated open-source Object-Relational DBMS supporting almost all SQL constructs.
 
 ## Featured technologies
 
-* [Cloud](https://www.ibm.com/developerworks/learn/cloud/): Accessing computer and information technology resources through the Internet.
+* [Cloud](https://developer.ibm.com/depmodels/cloud/): Accessing computer and information technology resources through the Internet.
 
 ## Watch the video
 
-[![](http://img.youtube.com/vi/fQY8q6CjU68/0.jpg)](https://youtu.be/fQY8q6CjU68)
+[![](https://img.youtube.com/vi/fQY8q6CjU68/0.jpg)](https://youtu.be/fQY8q6CjU68)
 
 ## Steps
 
-[![Deploy to IBM Cloud](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM/drupal-on-kubernetes-sample)
+[![Deploy to IBM Cloud](https://cloud.ibm.com/devops/setup/deploy/button.png)](https://cloud.ibm.com/devops/setup/deploy?repository=https://github.com/IBM/drupal-on-kubernetes-sample)
 
 Follow these steps to run Drupal on Kubernetes.
 
@@ -59,10 +59,10 @@ Note: Minimum version 1.10 is required for both Kubernetes server and kubectl cl
 
 #### 2.1 Locally
 
-Follow the instructions for [running Kubernetes locally via Minikube](https://kubernetes.io/docs/getting-started-guides/minikube/).
+Follow the instructions for [running Kubernetes locally via Minikube](https://kubernetes.io/docs/setup/minikube/).
 
 #### 2.2 Hosted on IBM Cloud
-Follow the instructions for [creating a Kubernetes cluster in IBM Cloud](https://console.bluemix.net/docs/containers/container_index.html#clusters).
+Follow the instructions for [creating a Kubernetes cluster in IBM Cloud](https://cloud.ibm.com/docs/containers/container_index.html#clusters).
 
 ### 3. Create the service and deployment
 
@@ -103,9 +103,9 @@ Access the newly deployed Drupal site via http://<IP_ADDRESS>:30080
 
 ## Learn more
 
-* **Kubernetes on IBM Cloud**: Deliver your apps with the combined the power of [Kubernetes and Docker on IBM Cloud](https://www.ibm.com/cloud-computing/bluemix/containers)
+* **Kubernetes on IBM Cloud**: Deliver your apps with the combined the power of [Kubernetes and Docker on IBM Cloud](https://www.ibm.com/cloud/container-service)
 
 ## License
-This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](http://www.apache.org/licenses/LICENSE-2.0.txt).
+This code pattern is licensed under the Apache Software License, Version 2.  Separate third party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1 (DCO)](https://developercertificate.org/) and the [Apache Software License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
-[Apache Software License (ASL) FAQ](http://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
+[Apache Software License (ASL) FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
