@@ -27,13 +27,17 @@ spec:
     requests:
       storage: 10Gi
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: drupal
   labels:
     app: drupal
 spec:
+  selector:
+    matchLabels:
+      app: drupal
+      tier: frontend
   strategy:
     type: Recreate
   template:
